@@ -1,0 +1,204 @@
+body{
+	font-family: 'Satisfy', cursive;
+	margin: 0;
+	padding: 0;
+	background-image: url(img/metal.jpg);
+}
+
+ul{
+	margin: 0;
+	padding: 0;
+}
+
+header{
+	position: fixed;
+	width: 100%;
+    z-index: 9;
+	background : -webkit-linear-gradient(#4e4e4e, #000);
+}
+
+.logo{
+	margin-top: 24px;
+}
+
+.logo a:hover{
+	cursor: pointer;
+}
+
+.logo p{
+	color: #fff;
+}
+
+.menu ul{
+	display: flex;
+	justify-content: center;
+	list-style: none;
+	height: 100%;
+}
+
+.menu nav{
+	height: 100%;
+}
+
+.menu li{
+	color: #fff;
+	margin-right: 20px;
+	margin-left: 20px;
+}
+
+.menu a:hover{
+	color: #000;
+	background : -webkit-linear-gradient(#b32927, #f1d389);
+	cursor: pointer;
+}
+
+.menu a{
+	padding-top: 24px;
+}
+
+.logo a, .menu a{
+	text-decoration: none;
+}
+
+.titles h1{
+	font-size: 50px;
+	text-align: center;
+	color: #fff;
+	margin-top: 60px;
+}
+
+.titles h2{
+	font-size: 40px;
+	text-align: center;
+	color: #fff;
+	margin-top: 30px;
+}
+
+.plg img{
+	display: block;
+	margin: 0 auto;
+}
+
+.plg{
+	margin-top: 40px;
+}
+
+.titles, .plg{
+	margin-top: 100px;
+}
+
+.slider{
+	margin-top: 40px;
+}
+
+.jn{
+	text-align: center;
+	color: #fff;
+	margin-top: 60px;
+}
+
+.jn h2{
+	font-size: 90px;
+	padding-top: 120px;
+}
+
+.jn button{
+	font-size: 60px;
+	padding: 10px 90px;
+	background: -webkit-linear-gradient(#000e, #fff);
+	opacity: 0.8;
+	transition: 0.5s transform;
+	margin-bottom: 120px;
+}
+
+.jn button:hover{
+	background: -webkit-linear-gradient(#b32927, #f1d389);
+	transform: rotate(360deg);
+	opacity: 1.0;
+	cursor: pointer;
+}
+
+.foot{
+	margin-top: 60px;
+	text-align: center;
+	background : -webkit-linear-gradient(#4e4e4e, #000);
+}
+
+.foot p{
+	font-size: 20px;
+	color: #fff;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-bottom: 0;
+}
+
+.jn{
+	position: relative;
+}
+
+.anim img{
+	position: absolute;
+	animation-name: spin;
+	animation-duration: 4s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+.anim img:hover{
+	animation-play-state: paused;
+}
+
+@keyframes spin{
+	0%{
+		left: 0;
+		top: 0;
+		right: 0;
+		bottom: 0;
+	}
+	25%{
+		top: 380px;
+		left: 0;
+	}
+	50%{
+		left: 870px;
+		top: 380px;
+	}
+	75%{
+		top: 0px;
+		left: 870px;
+	}
+	100%{
+		left: 0px;
+		top: 0px;
+	}
+
+}
+
+@media(max-width: 990px)
+{
+	.anim{
+		display: none;
+	}
+	.jn h2{
+		padding-top: unset;
+	}
+	.jn button{
+		margin-bottom: unset;
+	}
+}
+
+@media(max-width: 575px)
+{
+	.menu a{
+		padding-top: 0px;
+	}
+	.logo{
+		text-align: center;
+	}
+	.plg{
+		margin-top: 40px;
+	}
+	.titles{
+		margin-top: 60px;
+	}
+}
